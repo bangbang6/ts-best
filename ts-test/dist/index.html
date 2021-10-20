@@ -7,6 +7,12 @@
   <title>Document</title>
 </head>
 <body>
-  <script src="/src.f10117fe.js"></script>
+  <script src="/son.4ff04a81.js"></script>
+  <script>function aa() {
+  this.name = 'bang'; //function aa的 静态属性 而不是实例属性 也不是原型对象上的属性
+}
+
+aa.prototype.age = 1;
+console.log('aa', aa.prototype);</script>
 </body>
 </html>

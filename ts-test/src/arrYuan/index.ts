@@ -1,0 +1,1 @@
+let [x,y]:readonly [number,...any] = [1,'adasd',23423] as const //rest表示可变元组
