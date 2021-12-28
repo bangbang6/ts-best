@@ -29,7 +29,7 @@ interface testR{
   readonly name:string
   readonly age:number
 }
-type testR2 {
+type testR2 ={
   readonly name:string
   readonly age:number
 }

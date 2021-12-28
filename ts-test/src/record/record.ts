@@ -13,7 +13,14 @@ type mt4 = oneType<typeof str>  //返回string
 
 
 type MyRecord = {
-  [P in number] :string
+  [P in 'username' | 'age'] :string
+}
+interface MyRecord2  {
+  [P :string | number] :string  //报错
+}
+let a2:MyRecord = {
+  'username':"asd",
+  "age":'sad'
 }
 // type MyRecord<K> = {
 //   username: string;
@@ -41,3 +48,11 @@ testO['sa'] = 'xzx'
 let myMap = new Map<string,string>()  //!第一个是key的类型 第二个是value类型
 myMap.set('nang','vabnf')
 myMap.set(1,'vabnf') //报错因为key只能是string类型
+
+
+interface Book {
+  ISBN:string,
+  name:string,
+  price:string,
+  count:number
+}

@@ -1,0 +1,4 @@
+ interface settings {
+  name:string,
+
+}

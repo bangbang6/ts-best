@@ -1,5 +1,5 @@
 {
-  "name": "ts-test",
+  "name": "ts-decorator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,19 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:build": "tsc -w",
     "dev:start": "nodemon --watch dist/teaching js --exec node ./dist/teaching/1ClassDecorator.js",
-    "start": "concurrently npm:dev:*",
-    "tsc": "tsc src2/teaching/1ClassDecorator.ts --target ES5 -w --experimentalDecorators",
-    "startP": "parcel ./index.html"
+    "start": "ts-node src/app.ts",
+    "tsc": "tsc src2/teaching/1ClassDecorator.ts --target ES5 -w --experimentalDecorators"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.5"
-  },
   "dependencies": {
+    "@types/express": "^4.17.13",
     "concurrently": "^6.4.0",
+    "express": "^4.17.2",
+    "express-router": "^0.0.1",
+    "express-session": "^1.17.2",
     "nodemon": "^2.0.15",
-    "testtsevents": "^3.3.0",
+    "reflect-metadata": "^0.1.13",
     "typescript": "^4.4.3"
   }
 }

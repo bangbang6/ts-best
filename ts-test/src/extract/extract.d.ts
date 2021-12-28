@@ -1,0 +1,10 @@
+declare type test = Extract<string, string | number>;
+declare type tes2t5 = Extract<string | number, string>;
+declare type tes2t = Extract<string | number, string | number | symbol>;
+declare type tes2t3 = Extract<string | number, string | number | symbol>;
+declare type tes2t4 = Extract<string | number | symbol, string | number>;
+declare type fun1 = (one: number) => string;
+declare type fun2 = (one: number, two: string) => string | number;
+declare type test2323 = Extract<fun1, fun2>;
+declare type test23232 = Extract<fun2, fun1>;
+declare type crossType<T> = Extract<T, object>;
