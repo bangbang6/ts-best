@@ -1,0 +1,21 @@
+{
+  "name": "ts-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:c": "jest --coverage",
+    "test:w": "jest --watchAll --coverage",
+    "lint": "eslint \"src/**\"",
+    "lint:f": "eslint \"src/**\" --fix "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.7",
+    "ts-jest": "^27.1.3"
+  }
+}
